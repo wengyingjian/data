@@ -1,0 +1,33 @@
+#!/bin/bash
+
+cd $BLOG_HOME
+
+if [ $# == 0 ];then
+	echo "BLOG_HOME: $BLOG_HOME"
+	
+elif [ $1 == 'new' ];then
+	hexo new $2
+	open source/_posts/$2.md
+
+elif [ $1 == 'open' ];then
+	open source/_posts/$2.md
+
+elif [ $1 == 'ls' ];then
+	ls -t source/_posts/
+
+elif [ $1 == 'rm' ];then
+	rm source/_posts/$2.md
+
+elif [ $1 == 'debug' ];then
+	hexo s --debug
+
+elif [ $1 == 'deploy' ];then
+	hexo g
+	cd public/
+	git add .
+	git commit -m "a"
+	git push
+
+else
+	echo "usage: hexo option(new/open/ls/rm/debug/deploy)"
+fi
