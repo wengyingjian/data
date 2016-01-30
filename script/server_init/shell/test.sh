@@ -1,9 +1,7 @@
 #!/bin/bash
 
-echo
-"# for maven settings
-export MAVEN_HOME=${MAVEN_HOME}
-export PATH=${MAVEN_HOME}/bin:${PATH}"
->> /etc/profile
+source ./download_to.sh
 
-source /etc/profile
+download_to http://aab/aa.a.gz.tar /usr/local/apache
+
+echo $?
