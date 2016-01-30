@@ -15,7 +15,7 @@ function download_to(){
 
 
 	cd ${TMP_DIR}
-	wget -O ${TMP_FILE} SOURCE_URL
+	wget -O ${TMP_FILE} ${SOURCE_URL}
 	tar -zxvf ${TMP_FILE} -C ${INSTALL_DIR}
 	ll ${TMP_FILE#*.}*
 	return $?
