@@ -12,12 +12,11 @@ function download_to(){
 	SOURCE_URL=$1
 	INSTALL_DIR=$2
 	TMP_FILE=${SOURCE_URL##*/}
-	FILE_NAME=${INSTALL_DIR##*/}
 
 
 	cd ${TMP_DIR}
 	wget -O ${TMP_FILE} SOURCE_URL
-	tar -zxvf ${TMP_FILE} -C ${FILE_NAME}
-	mv ${FILE_NAME} ${INSTALL_DIR}
-	return 0
+	tar -zxvf ${TMP_FILE} -C ${INSTALL_DIR}
+	ll ${TMP_FILE#*.}*
+	return $?
 }
