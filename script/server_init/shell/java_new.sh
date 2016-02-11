@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ./fn_download_to.sh
-
 INSTALL_DIR="/usr/local"
 TAR_FILE="/usr/local/jdk-8u71-linux-x64.tar.gz"
 DIR_NAME="jdk-8u71-linux-x64"
