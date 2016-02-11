@@ -14,6 +14,7 @@
 	read -p "Please Input 1,2,3: " VER_ID
 		yum -y update
 		yum -y install gcc-c++
+cd /usr/local/src/
 case $VER_ID in
     1)  
 	Ver=1.4.7

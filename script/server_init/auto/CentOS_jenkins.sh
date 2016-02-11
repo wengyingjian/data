@@ -3,6 +3,7 @@
 #Author：wengyingjian
 JENKINS_URL=http://www.wengyingjian.com/src/jenkins/jenkins.war
 
+cd /usr/local/src/
 wget ${JENKINS_URL}
 mv jenkins.war /usr/local/src/apache-tomcat-8.0.20/webapps/
 

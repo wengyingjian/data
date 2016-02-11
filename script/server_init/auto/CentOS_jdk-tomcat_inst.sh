@@ -7,6 +7,7 @@ TOMCAT_URL=http://www.wengyingjian.com/src/tomcat/apache-tomcat-8.0.20.tar.gz
 yum install java-1.8.0-openjdk* -y 
 
 #install tomcat
+cd /usr/local/src/
 TOMCAT_Ver=8.0.20
 wget ${TOMCAT_URL}
 
