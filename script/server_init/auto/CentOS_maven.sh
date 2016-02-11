@@ -2,7 +2,7 @@
 #CentOS jenkins install scripts
 #Author：wengyingjian
 
-MAVEN_URL=http://www.wengyingjian.com/src/maven/apache-maven-3.3.9-bin.tar.gz
+MAVEN_URL=http://download.wengyingjian.com/src/maven/apache-maven-3.3.9-bin.tar.gz
 
 cd /usr/local/src/
 wget ${MAVEN_URL}

@@ -1,7 +1,7 @@
 #!/bin/bash
 #CentOS jenkins install scripts
 #Author：wengyingjian
-JENKINS_URL=http://www.wengyingjian.com/src/jenkins/jenkins.war
+JENKINS_URL=http://download.wengyingjian.com/src/jenkins/jenkins.war
 
 cd /usr/local/src/
 wget ${JENKINS_URL}

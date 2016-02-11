@@ -1,7 +1,7 @@
 #!/bin/bash
 #CentOS jdk+tomcat install scripts
 #Author：wengyingjian
-TOMCAT_URL=http://www.wengyingjian.com/src/tomcat/apache-tomcat-8.0.20.tar.gz
+TOMCAT_URL=http://download.wengyingjian.com/src/tomcat/apache-tomcat-8.0.20.tar.gz
 
 #install java
 yum install java-1.8.0-openjdk* -y 
